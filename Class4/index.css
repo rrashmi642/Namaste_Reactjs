@@ -31,8 +31,9 @@ font-size: large;
     
 }
 .card{
-    height: fit-content;
-    padding: 1%;
+    height: 370px;
+    width: 170px;
+    padding: 2%;
     border: 1px solid red;
 }
 
