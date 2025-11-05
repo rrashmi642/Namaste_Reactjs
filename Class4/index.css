@@ -25,15 +25,22 @@ font-size: large;
 #res-container{
     display: flex;
   flex-wrap: wrap;
-  margin: 18px;
- gap: 15px;
+  margin: 10px;
+ gap: 25px;
  /* border: 2px solid red */
     
 }
 .card{
-    height: 370px;
-    width: 170px;
-    padding: 2%;
+    /* height: 400px; */
+    width: 180px;
+    padding: 1%;
+   
+    background-color: #f0f0f0;
+    align-items: center;
+    justify-content: center;
+}
+.card:hover{
     border: 1px solid red;
+    cursor: pointer;
 }
 
