@@ -1,0 +1,38 @@
+#header-con{
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid gray;
+    background-color: rgb(240, 234, 115);
+}
+#logo{
+    height: 100px;
+}
+#navbar{
+    display: flex;
+    align-items: center;   
+}
+
+#navbar li{
+padding: 0px 35px;
+list-style: none;
+font-size: large;
+}
+
+/* #body{
+} */
+
+#res-container{
+    display: flex;
+  flex-wrap: wrap;
+  margin: 18px;
+ gap: 15px;
+ /* border: 2px solid red */
+    
+}
+.card{
+    height: fit-content;
+    padding: 1%;
+    border: 1px solid red;
+}
+
