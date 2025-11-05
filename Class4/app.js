@@ -1718,15 +1718,15 @@ const Header = () => {
 
 const ResCard = (props) =>{
     const {resData} = props;
-    // {title, avgRating, costForTwo, cuisines, deliveryTime  = cards};
+    const {name, avgRating, costForTwo, cuisines, deliveryTime} = resData?.info;
     return(
          <div className="card">
-            <img alt="res" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + resData.info.cloudinaryImageId} style={{ height: '200px', width: '150px'}}></img>
-            <h3>{resData.info.name}</h3>
-            <h4>{resData.info. avgRating}</h4>
-            <h4>{resData. info.cuisines.join(', ')}</h4>
-            <h4>{resData. info.costForTwo}</h4>
-            <h4>{resData. info.deliveryTime}</h4>
+            <img alt="res" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + resData.info.cloudinaryImageId} style={{ height: '200px', width: '150px', alignItems: "center", justifyContent: "center"}}></img>
+            <h3>{name}</h3>
+            <h4>{avgRating}</h4>
+            <h4>{cuisines.join(', ')}</h4>
+            <h4>{costForTwo}</h4>
+            <h4>{deliveryTime}</h4>
             
             {/* <h4></h4> */}
         </div>
