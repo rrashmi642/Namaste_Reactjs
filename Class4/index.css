@@ -27,20 +27,41 @@ font-size: large;
   flex-wrap: wrap;
   margin: 10px;
  gap: 25px;
- /* border: 2px solid red */
+
     
 }
 .card{
     /* height: 400px; */
-    width: 180px;
+    width: 160px;
     padding: 1%;
-   
+    height: 420px;
     background-color: #f0f0f0;
     align-items: center;
     justify-content: center;
 }
 .card:hover{
-    border: 1px solid red;
+    border: 1px solid black;
     cursor: pointer;
 }
 
+#shimmer-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 25px;
+    
+}
+.shimmer-card{
+    /* display: flex; */
+    margin: 10px;
+    width: 170px;
+    height: 400px;
+    background-color: #e4dfdf;
+}
+
+#login{
+    font-size: large;
+}
+#login:hover{
+    cursor: pointer;
+}
