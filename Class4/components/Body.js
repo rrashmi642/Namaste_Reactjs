@@ -2,6 +2,7 @@ import ResCard from "./ResCard";
 // import resList from "../utils/mockData";
 import { useEffect, useState } from "react";
 import Shimmer from "./shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   //     let resList = [{
@@ -266,11 +267,11 @@ const Body = () => {
     console.log(json);
     if (data){
       setNewResList(
-        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
       );
       setfilteredList(
-        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants);
      
       }
@@ -313,7 +314,7 @@ const Body = () => {
             const filterData = newResList.filter(
               (res) => res.info.avgRating > 4.5
             );
-            setNewResList(filterData);
+            setfilteredList(filterData);
             console.log(newResList);
           }}
         > Filter High Rated Restaurants
@@ -323,7 +324,7 @@ const Body = () => {
       <div id="res-container">
         {/* <h1>Loading....</h1> */}
         {filteredList.map((restaurant) => (
-          <ResCard key={restaurant.info.id} resData={restaurant} />
+         <Link to= "/menu" key={restaurant.info.id}> <ResCard  resData={restaurant} /></Link>
         ))}
       </div>
     </div>
